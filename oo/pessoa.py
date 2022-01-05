@@ -13,5 +13,11 @@ if __name__ == '__main__':
     print(id(luciano))
     print(luciano.cumprimentar())
     print(luciano.cumprimentar)
+    print(luciano.nome)
     for filho in luciano.filhos:
         print(filho.nome)
+    luciano.sobrenome = 'Ramalho'
+    del luciano.filhos
+    print(luciano.sobrenome)
+    print(luciano.__dict__)
+    print(renzo.__dict__)
